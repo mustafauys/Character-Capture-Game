@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353867677744",
+    "firebase_url": "https://quiztreasure.firebaseio.com",
+    "project_id": "quiztreasure",
+    "storage_bucket": "quiztreasure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353867677744:android:aad6242266ea068a016df5",
+        "android_client_info": {
+          "package_name": "com.example.knowledge_treasure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353867677744-2fsmf1ffobnldl7ujre3auk6pkgofgps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLiDd7XWPDOJbdjMN3lLF8AB8ju6xy1A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353867677744-2fsmf1ffobnldl7ujre3auk6pkgofgps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
