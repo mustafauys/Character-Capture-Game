@@ -5,21 +5,24 @@ class AuthService {
   FirebaseAuth _auth = FirebaseAuth.instance;
 
   User _userFormFirebaseUser(FirebaseUser user) {
-    return user != null ? User (uid: user.uid) : null;
+    return user != null ? User(uid: user.uid) : null;
   }
-  
+
   Future signInEmailAndPass(String email, String password) async {
     try {
-      AuthResult authResult = await _auth.signInWithEmailAndPassword(email: email, password: password);
+      AuthResult authResult = await _auth.signInWithEmailAndPassword(
+          email: email, password: password);
       FirebaseUser firebaseUser = authResult.user;
       return _userFormFirebaseUser(firebaseUser);
-    } catch(e) {
+    } catch (e) {
       print(e.toString());
     }
   }
+
   Future signUpWithEmailAndPassword(String email, String password) async {
     try {
-      AuthResult authResult = await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      AuthResult authResult = await _auth.createUserWithEmailAndPassword(
+          email: email, password: password);
       FirebaseUser firebaseUser = authResult.user;
       return _userFormFirebaseUser(firebaseUser);
     } catch (e) {
@@ -35,5 +38,4 @@ class AuthService {
       return null;
     }
   }
-  
 }
