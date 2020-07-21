@@ -19,17 +19,14 @@ class _HomeState extends State<Home> {
       ),
       body: Container(
         child: Column(
-          children: <Widget>[
-            
-          ],
+          children: <Widget>[],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: (){
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => CreateQuiz()
-          ));
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => CreateQuiz()));
         },
       ),
     );
