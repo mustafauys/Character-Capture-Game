@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:knowledge_treasure/helper/functions.dart';
 import 'package:knowledge_treasure/services/auth.dart';
 import 'package:knowledge_treasure/views/home.dart';
 import 'package:knowledge_treasure/views/signup.dart';
@@ -26,6 +27,7 @@ class SignInState extends State<SignIn> {
           setState(() {
             _isLoading = false;
           });
+          HelperFunctions.saveUserLoggedInDetails(isLoggedin: true);
           Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => Home()));
         }
@@ -84,7 +86,9 @@ class SignInState extends State<SignIn> {
                       onTap: () {
                         signIn();
                       },
-                      child: blueButton(context, "Sign In"),
+                      child: blueButton(
+                        context: context,
+                          label: "Sign In",),
                     ),
                     SizedBox(
                       height: 18,
