@@ -34,7 +34,9 @@ class _CreateQuizState extends State<CreateQuiz> {
         setState(() {
           _isLoading = false;
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => AddQuestion()));
+              context, MaterialPageRoute(builder: (context) => AddQuestion(
+                quizId
+              )));
         });
       });
     }
@@ -103,7 +105,10 @@ class _CreateQuizState extends State<CreateQuiz> {
                         onTap: () {
                           creteQuizOnline();
                         },
-                        child: blueButton(context, "Create Quiz")),
+                        child: blueButton(
+                          context: context,
+                          label: "Create Quiz"
+                          )),
                     SizedBox(
                       height: 60,
                     ),
