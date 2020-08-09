@@ -1,6 +1,6 @@
 # knowledge_treasure
 
-A new Flutter project.
+# Quiz Treasure Application
 
 ## Getting Started
 
