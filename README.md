@@ -1,3 +1,5 @@
+## The work done in this repo is out of date, the packages need to be updated and edited again.
+
 ## A Simple Catch-up Game Made with Java Tutorial
 
 This is a character capture game made in Java. You can now win by catching the character on the screen within a certain period of time.
